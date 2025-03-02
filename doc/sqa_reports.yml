@@ -1,0 +1,6 @@
+Applications:
+    capybara:
+        app_types:
+            - CapybaraApp
+        content_directory: ${ROOT_DIR}/doc/content
+        log_default: WARNING
