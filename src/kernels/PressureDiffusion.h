@@ -1,15 +1,15 @@
 #pragma once
 
-#include "TimeDerivative.h"  // Use TimeDerivative instead of ADTimeKernel
+#include "TimeDerivative.h"  
 
-class PressureDiffusion : public TimeDerivative  // Inherit from TimeDerivative
+class PressureDiffusion : public TimeDerivative  
 {
 public:
   static InputParameters validParams();
   PressureDiffusion(const InputParameters & parameters);
 
 protected:
-  virtual Real computeQpResidual() override;  // Use TimeDerivative's computeQpResidual
+  virtual Real computeQpResidual() override;  
 
 private:
   const Real _permeability;
